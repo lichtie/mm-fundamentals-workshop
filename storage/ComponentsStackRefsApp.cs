@@ -20,6 +20,8 @@ class ComponentsStackRefsApp : Stack
         // Get the resource group name from the base stack's outputs
         var resourceGroupName = stackOutput(baseStackRef, "ResourceGroupName");
 
+        // var resourceGroupName = config.Require("resourceGroupName");
+
         // Create storage resources using the custom component
         var storage = new StorageComponent("storage", new StorageComponentArgs
         {
