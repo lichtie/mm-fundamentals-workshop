@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+  <OutputType>Exe</OutputType>
+  <TargetFramework>netcoreapp9.0</TargetFramework>
+  <Nullable>enable</Nullable>
+  <AssemblyName>storage-component</AssemblyName>
+</PropertyGroup>
+
+<ItemGroup>
+  <PackageReference Include="Pulumi" Version="3.*" />
+  <PackageReference Include="Pulumi.AzureNative" Version="*" />
+</ItemGroup>
+
+</Project>
