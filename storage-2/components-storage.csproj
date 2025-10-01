@@ -1,10 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp9.0</TargetFramework>
     <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);sdks/**/*.cs</DefaultItemExcludes>
+   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Pulumi" Version="3.*" />
@@ -14,5 +15,4 @@
   <ItemGroup>
     <ProjectReference Include="sdks\storage-component\Pulumi.StorageComponent.csproj" />
   </ItemGroup>
-
 </Project>

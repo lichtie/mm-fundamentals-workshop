@@ -2,6 +2,30 @@
 
 This project demonstrates two key Pulumi concepts: **Components** and **Stack References** through a practical Azure storage implementation.
 
+## Setup
+
+### 1. Add the Storage Component
+
+```bash
+pulumi package add ../components/storage-component
+```
+
+This command generates a local SDK from the component and adds it as a project reference.
+
+### 2. Configure the Stack
+
+```bash
+pulumi config set baseName <your-base-name>
+pulumi config set baseStackProjectName <base-project-name>
+pulumi config set baseStackName <base-stack-name>
+```
+
+### 3. Deploy
+
+```bash
+pulumi up
+```
+
 ## Components
 
 Pulumi Components are reusable infrastructure building blocks that encapsulate related resources and create abstractions for common patterns.
