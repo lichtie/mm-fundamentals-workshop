@@ -10,12 +10,12 @@ class ComponentsStackRefsApp : Stack
         var baseStackName = config.Require("baseStackName");
 
         // Build the full stack reference path: org/project/stack
-        var stackName = Pulumi.Deployment.Instance.StackName;
-        var orgName = Pulumi.Deployment.Instance.OrganizationName;
-        var baseStackFullName = $"{orgName}/{baseStackProjectName}/{baseStackName}";
+        // var stackName = Pulumi.Deployment.Instance.StackName;
+        // var orgName = Pulumi.Deployment.Instance.OrganizationName;
+        // var baseStackFullName = $"{orgName}/{baseStackProjectName}/{baseStackName}";
 
-        // Create reference to the base infrastructure stack
-        var baseStackRef = new StackReference(baseStackFullName);
+        // // Create reference to the base infrastructure stack
+        // var baseStackRef = new StackReference(baseStackFullName);
 
         // // Get the resource group name from the base stack's outputs
         // var resourceGroupName = stackOutput(baseStackRef, "ResourceGroupName");
